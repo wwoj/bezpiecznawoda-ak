@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import "./Style/navbar.css";
 
@@ -7,7 +7,7 @@ import HomePage from "./Views/home";
 import ContactPage from "./Views/contact";
 
 import {
-  BrowserRouter,HashRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";

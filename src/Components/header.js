@@ -1,17 +1,21 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import AKLogo from "../Pictures/Logo_1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope,faMobile,faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope,faMobile } from '@fortawesome/free-solid-svg-icons'
 const header = () => {
   return (
     <nav className="navbar">
-      <ul className="navbar-list">
+      <ul className="navbar-list list-style-none">
         <li className="navbar-li">
           <div>
             <img src={AKLogo} alt="Bezpieczna woda Logo" />
           </div>
         </li>
+        
+      </ul>
+      <div className="navbar-contact-container">
+        <ul className="navbar-list list-style-none">
         <li className="navbar-li">
           <NavLink
             activeclassname="test"
@@ -42,9 +46,7 @@ const header = () => {
             Contact-Mail
           </NavLink>
         </li>
-      </ul>
-      <div className="navbar-contact-container">
-        <ul className="navbar-list navbar-contact">
+        <ul className="navbar-contact ds-flex-sb list-style-none">
           <li>
             <a className="navbar-contact-item" href="tel:+48534073727">
               Zadzwoń do nas
@@ -62,7 +64,7 @@ const header = () => {
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </li>
-        </ul>
+        </ul></ul>
         </div>
     </nav>
   );
