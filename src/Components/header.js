@@ -1,72 +1,55 @@
-import React from "react";
+import React,{useState,useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import AKLogo from "../Pictures/Logo_1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope,faMobile } from '@fortawesome/free-solid-svg-icons'
-const header = () => {
+import { faEnvelope,faPhone, } from '@fortawesome/free-solid-svg-icons'
+function Header(){
+ 
   return (
-    <nav className="navbar">
-      <ul className="navbar-list list-style-none">
-        <li className="navbar-li">
-          <div>
+    <nav className="ds-flex-sb nav-container ds-flex-wramp">
+      <ul className="list-style ds-flex-sb ds-flex-wramp">
+        <li>
+          <NavLink activeClassName="test" className="" end to="/">
             <img src={AKLogo} alt="Bezpieczna woda Logo" />
-          </div>
-        </li>
-        
-      </ul>
-      <div className="navbar-contact-container">
-        <ul className="navbar-list list-style-none">
-        <li className="navbar-li">
-          <NavLink
-            activeclassname="test"
-            className="nav-link navbar-text"
-            end
-            to="/"
-          >
-            Strona główna
           </NavLink>
         </li>
-        <li className="navbar-li">
-          <NavLink
-            activeclassname="test"
-            className="nav-link navbar-text"
-            end
-            to="/contact"
-          >
+      </ul>
+      <ul className="list-style ds-flex-sb ds-flex-wramp">
+        <li>
+          <NavLink activeClassName="test" className="" end to="/info">
+            O firmie
+          </NavLink>
+        </li>
+        <li>
+        <NavLink to="/oferta" activeClassName="selected">
+            Oferta
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeclassname="test" className="" end to="/realizacje">
+            Realizacje
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeclassname="test" className="" end to="/contact">
             Kontakt
           </NavLink>
         </li>
-        <li className="navbar-li">
-          <NavLink
-            activeclassname="test"
-            className="nav-link navbar-text"
-            end
-            to="/contact/mail"
-          >
-            Contact-Mail
-          </NavLink>
+        <li>
+          <a href="tel:+48533098555">
+            <FontAwesomeIcon icon={faPhone} size="2x" />
+          </a>
         </li>
-        <ul className="navbar-contact ds-flex-sb list-style-none">
-          <li>
-            <a className="navbar-contact-item" href="tel:+48534073727">
-              Zadzwoń do nas
-              <FontAwesomeIcon icon={faMobile} />
-
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="navbar-contact-item"
-              href="mailto:bezpiecznawoda@bzwoda.pl"
-            >
-              napisz do nas
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </li>
-        </ul></ul>
-        </div>
+      </ul>
     </nav>
   );
 };
-export default header;
+export default Header;
+{/* <NavLink
+              activeclassname="test"
+              className="nav-link navbar-text"
+              end
+              to="/"
+            >
+              Strona główna
+            </NavLink> */}
