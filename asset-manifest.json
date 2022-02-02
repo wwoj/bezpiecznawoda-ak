@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bezpiecznawoda-ak/static/css/main.538ff2ed.css",
-    "main.js": "/bezpiecznawoda-ak/static/js/main.b28d6cd4.js",
+    "main.css": "/bezpiecznawoda-ak/static/css/main.8ce12362.css",
+    "main.js": "/bezpiecznawoda-ak/static/js/main.03f3ed4f.js",
     "static/js/787.073a0837.chunk.js": "/bezpiecznawoda-ak/static/js/787.073a0837.chunk.js",
     "static/media/water-pic9.jpg": "/bezpiecznawoda-ak/static/media/water-pic9.80d37f5369edb91ad7d6.jpg",
     "static/media/water-pic5.jpg": "/bezpiecznawoda-ak/static/media/water-pic5.f4f5fe4fed324cbaf7e3.jpg",
@@ -13,12 +13,12 @@
     "static/media/water-pic7.jpg": "/bezpiecznawoda-ak/static/media/water-pic7.9b6232a196dc49f6c021.jpg",
     "static/media/Logo_2.png": "/bezpiecznawoda-ak/static/media/Logo_2.b373554548a68f5838b6.png",
     "index.html": "/bezpiecznawoda-ak/index.html",
-    "main.538ff2ed.css.map": "/bezpiecznawoda-ak/static/css/main.538ff2ed.css.map",
-    "main.b28d6cd4.js.map": "/bezpiecznawoda-ak/static/js/main.b28d6cd4.js.map",
+    "main.8ce12362.css.map": "/bezpiecznawoda-ak/static/css/main.8ce12362.css.map",
+    "main.03f3ed4f.js.map": "/bezpiecznawoda-ak/static/js/main.03f3ed4f.js.map",
     "787.073a0837.chunk.js.map": "/bezpiecznawoda-ak/static/js/787.073a0837.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.538ff2ed.css",
-    "static/js/main.b28d6cd4.js"
+    "static/css/main.8ce12362.css",
+    "static/js/main.03f3ed4f.js"
   ]
 }
