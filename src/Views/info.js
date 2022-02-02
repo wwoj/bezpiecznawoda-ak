@@ -3,28 +3,9 @@ import AKLogo from "../Pictures/Logo_2.png";
 import Water10 from "../Pictures/water-pic14.jpg";
 
 import { Parallax } from 'react-parallax';
-const image3 =
-  "https://img00.deviantart.net/2bd0/i/2009/276/c/9/magic_forrest_wallpaper_by_goergen.jpg";
-  const inlineStyle={
-    background: '#fff',
-    left: '50%',
-    top: '50%',
-    position:'absolute',
-    padding: '20px',
-    transform: 'translate(-50%,-50%)'
-  
-  }
+
 function Info(){
-    const [count, setCount] = useState(0);
-    function testMe(){
-        setCount(count + 1);
-        console.log("TestMe",count)
-    }
-    
-    useEffect(() => {
-        // Zaktualizuj tytuł dokumentu, korzystając z interfejsu API przeglądarki
-        document.title = `Naciśnięto ${count} razy`;
-      });
+
     return (
       <div className="page-container">
         <Parallax bgImage={Water10} strength={-600}>

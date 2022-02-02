@@ -261,6 +261,21 @@ padding: 2rem;
     .parallax-container{
         height: 300px;
     }
+
+  }
+  @media only screen and (max-width: 600px) {
+    .offert-row{
+        flex-direction: column;
+        div{
+            width: 90%;
+            margin-right: 5%;
+            margin-left: 5%;
+
+        }
+        div:not(:first-child){
+            border-top:1px solid black ;
+        }
+    }
   }
 
   .list-style{
@@ -314,5 +329,39 @@ padding: 2rem;
     p{
         text-align: justify;
         padding: 1rem;
+    }
+}
+.offert-list-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.offerd-cards
+{
+    .nav-bottom-item-text{
+      font-size: 1.3rem;}
+
+}
+.offert-icon, .offert-name{
+width: 20%;
+padding: 10px;
+}
+.offert-desc{
+    width: 60%;
+padding: 10px;
+
+}
+.offert-row:nth-of-type(even){
+    background: $primaryTextColor
+    
+}
+.offert-row{
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        font-weight: 600;
+        padding: 20px
     }
 }
