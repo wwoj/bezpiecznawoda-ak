@@ -6,6 +6,8 @@ import "./Style/navbar.css";
 import Header from "./Components/header";
 import HomePage from "./Views/home";
 import ContactPage from "./Views/contact";
+import InfoPage from "./Views/info";
+
 import Footer from './Components/footer';
 
 import "./Style/index.scss";
@@ -23,6 +25,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/contact" element={<ContactPage />} />
+          <Route exact path="/info" element={<InfoPage />} />
+
         </Routes>
         {/* <Route exact path="/Vodka/:name" component={Vodka} /> */}
       </HashRouter>
