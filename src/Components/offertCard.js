@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBroom,faTools,faTint,faKiwiBird,faWater,faPumpSoap } from '@fortawesome/free-solid-svg-icons'
+import { faBroom,faTools,faTint,faKiwiBird,faWater,faPumpSoap } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-scroll';
 const OffertCard = (props) => {
     const test =function(){
         console.log("test me asd here")
@@ -26,18 +27,15 @@ const OffertCard = (props) => {
         }
     }
   return (
+    <Link className="offerts-link-to ds-f-vert-center-sa nav-bottom-item" to={"offert_"+props.target} duration={5000}>
+    <div className="nav-bottom-item ds-f-vert-center-sa box-shadow1">
       
-   <div className="nav-bottom-item ds-f-vert-center-sa box-shadow1">
-       
-                
-            <div className="nav-bottom-item-icon"> 
-            {IcongSelect(props.type)} 
-            </div>
-            <div className="nav-bottom-item-text">{props.text} </div>
-       
- 
+        <div className="nav-bottom-item-icon">{IcongSelect(props.type)}</div>
+        <div className="nav-bottom-item-text">{props.text} </div>
+        
+    </div>
+    </Link>
 
-</div>
   );
 };
 export default OffertCard;

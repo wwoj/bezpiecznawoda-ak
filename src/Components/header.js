@@ -9,19 +9,19 @@ function Header(){
     <nav className="ds-flex-sb nav-container ds-flex-wramp">
       <ul className="list-style ds-flex-sb ds-flex-wramp">
         <li>
-          <NavLink activeClassName="test" className="" end to="/">
+          <NavLink activeclassname="test" className="" end to="/">
             <img src={AKLogo} alt="Bezpieczna woda Logo" />
           </NavLink>
         </li>
       </ul>
       <ul className="list-style ds-flex-sb ds-flex-wramp">
         <li>
-          <NavLink activeClassName="test" className="" end to="/info">
+          <NavLink activeclassname="test" className="" end to="/info">
             O firmie
           </NavLink>
         </li>
         <li>
-        <NavLink to="/offerts" activeClassName="selected">
+        <NavLink to="/offerts" activeclassname="selected">
             Oferta
           </NavLink>
         </li>

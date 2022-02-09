@@ -23,43 +23,50 @@ function Offerts(){
     return (
       <div className="page-container">
         <div className="ds-flex-wramp ds-flex-wr-js-sb offerd-cards ">
-          <OffertCard type={0} text="Rozwiązywanie problemów z wodą" />
-          <OffertCard type={1} text="Uzdatnianie wody" />
-          <OffertCard type={2} text="Dezynfekcja wody" />
+          <OffertCard type={0} target={0} text="Rozwiązywanie problemów z wodą" />
+          <OffertCard type={1} target={1} text="Uzdatnianie wody" />
+          <OffertCard type={2} target={2} text="Dezynfekcja wody" />
           <OffertCard
             type={3}
+            target={3}
             text="Innowacyjne metody usuwania osadów z instalacji"
           />
           <OffertCard
             type={4}
+            target={3}
             text="Eliminacja brudnej rdzawej ciepłej wody użytkowej"
           />
         </div>
 
         <Parallax
-        bgImage={Water6}
-        strength={-600}
-        renderLayer={(precentage) => (
-          <div
-            style={{
-              position: "absolute",
-              width: "100px",
-              height: "100px",
-              borderRadius: "50%",
-              background: `rgba(30, 46, 56, ${precentage * 0.5})`,
-              left: "50%",
-              top: "50%",
-              transform: `translate(-50%, -50%) scale(${precentage * 5})`,
-            }}
-          ></div>
-        )}
-      >
-        <div style={{ height: 500 }}>
-        <div className="logo-back-shadow center-logo" style={{color:'white'}}>Dostępne usługi</div>
-        </div>
-      </Parallax>
-        <div className="offert-list-container box-shadow1">
-          <div id="offert_1" className="ds-flex-wr-js-sb offert-row">
+          bgImage={Water6}
+          strength={-600}
+          renderLayer={(precentage) => (
+            <div
+              style={{
+                position: "absolute",
+                width: "100px",
+                height: "100px",
+                borderRadius: "50%",
+                background: `rgba(30, 46, 56, ${precentage * 0.5})`,
+                left: "50%",
+                top: "50%",
+                transform: `translate(-50%, -50%) scale(${precentage * 5})`,
+              }}
+            ></div>
+          )}
+        >
+          <div style={{ height: 500 }}>
+            <div
+              className="logo-back-shadow center-logo"
+              style={{ color: "white" }}
+            >
+              Dostępne usługi
+            </div>
+          </div>
+        </Parallax>
+        <div className="offert-list-container box-shadow1" id="offert-table">
+          <div id="offert_0" className="ds-flex-wr-js-sb offert-row">
             <div className="offert-icon">
               <FontAwesomeIcon icon={faTools} size="5x" />
             </div>
@@ -74,7 +81,7 @@ function Offerts(){
             </div>
           </div>
 
-          <div id="offert_2" className="ds-flex-wr-js-sb offert-row">
+          <div id="offert_1" className="ds-flex-wr-js-sb offert-row">
             <div className="offert-icon">
               <FontAwesomeIcon icon={faTint} size="5x" />
             </div>
@@ -87,28 +94,37 @@ function Offerts(){
               parametrach wymaganych przez klienta lub stosowane technologie.
             </div>
           </div>
-          <div id="offert_3" className="ds-flex-wr-js-sb offert-row">
+          <div id="offert_2" className="ds-flex-wr-js-sb offert-row">
             <div className="offert-icon">
               <FontAwesomeIcon icon={faPumpSoap} size="5x" />
             </div>
             <div className="offert-name">Dezynfekcja wody</div>
             <div className="offert-desc">
-            Drodzy klienci posiadamy skuteczne rozwiązanie do dezynfekcji wody dzięki któremu zwalczamy bakterie typu legionella, 
-            escherichia coli, ropy błękitnej czy nawet zgorzeli gazowej występujących w instalacjach wodnych.<br/>
-            Rozwiązania dopasowujemy do portfela klienta poprzez dywersyfikację dostępnych technologii . 
+              Drodzy klienci posiadamy skuteczne rozwiązanie do dezynfekcji wody
+              dzięki któremu zwalczamy bakterie typu legionella, escherichia
+              coli, ropy błękitnej czy nawet zgorzeli gazowej występujących w
+              instalacjach wodnych.
+              <br />
+              Rozwiązania dopasowujemy do portfela klienta poprzez
+              dywersyfikację dostępnych technologii .
             </div>
           </div>
-          <div id="offert_4" className="ds-flex-wr-js-sb offert-row">
+          <div id="offert_3" className="ds-flex-wr-js-sb offert-row">
             <div className="offert-icon">
               <FontAwesomeIcon icon={faWater} size="3x" />
               <FontAwesomeIcon icon={faBroom} size="3x" />
             </div>
-            <div className="offert-name">Innowacyjne metody usuwania osadów z instalacji eliminacja brudnej rdzawej ciepłej wody użytkowej</div>
+            <div className="offert-name">
+              Innowacyjne metody usuwania osadów z instalacji eliminacja brudnej
+              rdzawej ciepłej wody użytkowej
+            </div>
             <div className="offert-desc">
-            Jeżeli jesteś zainteresowany jak w stosunkowo nie długim czasie usunąć osady z instalacji, 
-            zabezpieczyć je przed korozją oraz zatrzymać proces zarastania rur niskim kosztem i całkowicie 
-            bezobsługowo na długie lata, skontaktuj się z nami a nasi specjaliści dokładnie omówią rozwiązanie 
-            i przedstawią ofertę cenową indywidualnie dopasowaną do Państwa instalacji.
+              Jeżeli jesteś zainteresowany jak w stosunkowo nie długim czasie
+              usunąć osady z instalacji, zabezpieczyć je przed korozją oraz
+              zatrzymać proces zarastania rur niskim kosztem i całkowicie
+              bezobsługowo na długie lata, skontaktuj się z nami a nasi
+              specjaliści dokładnie omówią rozwiązanie i przedstawią ofertę
+              cenową indywidualnie dopasowaną do Państwa instalacji.
             </div>
           </div>
         </div>

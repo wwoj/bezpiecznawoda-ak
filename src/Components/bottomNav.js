@@ -9,9 +9,9 @@ const navBottom = () => {
    <div className="bottom-nav-container box-shadow1 ds-flex-wr-js-sb">
        
        
-       <NavObject text="Dezynfekcja Wody" type={0} linkTo="/contact"/>
-       <NavObject text="Uzdatanianie wody" type={1} linkTo="/contact"/>
-       <NavObject text="Innowacyjne metody" type={2} linkTo="/contact"/>
+       <NavObject text="O firmie" type={0} linkTo="/info"/>
+       <NavObject text="Oferta" type={1} linkTo="/offerts"/>
+       <NavObject text="Realizacje" type={2} linkTo="/history"/>
        <NavObject text="Kontakt" type={3} linkTo="/contact"/>
 
        {/* <NavObject text="Rozwiązywanie problemów" iconClass="fas fa-address-card"/>

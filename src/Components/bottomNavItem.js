@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import AKLogo from "../Pictures/Logo_1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAddressCard,faPumpMedical,faTint,faKiwiBird } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard,faInfo,faTint,faHistory } from '@fortawesome/free-solid-svg-icons'
 const navBottom = (props) => {
     const test =function(){
         console.log("test me asd here")
@@ -12,13 +12,13 @@ const navBottom = (props) => {
         switch(type)
         {
             case 0:
-                return <FontAwesomeIcon icon={faPumpMedical} size="5x" />
+                return <FontAwesomeIcon icon={faInfo} size="5x" />
                 break;
             case 1:
                 return <FontAwesomeIcon icon={faTint} size="5x"/>
                 break;
             case 2:
-                return <FontAwesomeIcon icon={faKiwiBird} size="5x"/>
+                return <FontAwesomeIcon icon={faHistory} size="5x"/>
                 break;
             case 3:
                 return <FontAwesomeIcon icon={faAddressCard} size="5x"/>
