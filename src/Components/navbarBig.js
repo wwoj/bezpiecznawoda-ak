@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import AKLogo from "../Pictures/Logo_3.png";
+import AKLogo from "../Pictures/Logo_4.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
@@ -9,14 +9,14 @@ function NavbarBig(){
   return (
     <nav className="ds-flex-sb nav-container ds-flex-wramp">
       
-      <ul className="list-style ds-flex-sb ds-flex-wramp">
+      <ul className="list-style ds-flex-sb ds-flex-wramp" style={{padding:0}}>
         <li>
           <NavLink activeclassname="test" className="" end to="/">
             <img className="logo-container" src={AKLogo} alt="Bezpieczna woda Logo" />
           </NavLink>
         </li>
       </ul>
-      <ul className="list-style ds-flex-sb ds-flex-wramp">
+      <ul className="list-style ds-flex-sb ds-flex-wramp" style={{padding:0}}>
         <li>
           <NavLink activeclassname="test" className="" end to="/info">
             O firmie

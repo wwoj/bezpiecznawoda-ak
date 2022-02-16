@@ -1,11 +1,11 @@
 import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
-import AKLogo from "../Pictures/Logo_3.png";
+import AKLogo from "../Pictures/Logo_4.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars,faPhone, faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
 
 function NavbarSmall(){
-    const [height, setCount] = useState(100);
+    const [height, setCount] = useState(0);
  
     const switchMenuVisibility = function(){
         height ===0? setCount(100) :setCount(0);
@@ -20,7 +20,7 @@ function NavbarSmall(){
         <li>
           <NavLink activeclassname="test" className="" end to="/">
             <img
-              style={{ maxWidth: "20vw" }}
+              style={{ width: "220px" }}
               src={AKLogo}
               alt="Bezpieczna woda Logo"
             />

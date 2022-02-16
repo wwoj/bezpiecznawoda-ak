@@ -1,4 +1,7 @@
 @import './variables';
+.App{
+    position: relative;
+}
 body{
     // background-color: $primaryColor !important;
     // padding-bottom: 220px;
@@ -277,9 +280,10 @@ padding: 2rem;
   
   .list-style{
     list-style-type: none;
+    margin: 0;
   }
   .nav-container{
-      padding: 1rem 2rem 1rem 2rem;
+      padding: 1rem 1rem 1rem 1rem;
       background-color: $primaryColor;
       align-items: center;
       margin-bottom: 1rem;
@@ -443,8 +447,7 @@ padding:0.3rem;
     background: $primaryColor1  
 }
 .logo-container{
-    width: 15vw;
-    min-width: 120px;
+    width: 240px;
 }
 @media only screen and (max-width: 900px) {
     .list-style{
@@ -454,14 +457,14 @@ padding:0.3rem;
     }
    
 }
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 760px) {
     body{
         // background-color: $primaryColor !important;
         // padding-bottom: 360px;
     }
-    // .logo-container{
-    //     max-width: 20vw;
-    // }
+    .logo-container{
+        width: 200px;
+    }
     .active{
     
         color:white !important;
