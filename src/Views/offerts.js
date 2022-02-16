@@ -29,18 +29,18 @@ function Offerts(){
           <OffertCard
             type={3}
             target={3}
-            text="Innowacyjne metody usuwania osadów z instalacji"
+            text="Innowacyjne rozwiązania"
           />
-          <OffertCard
+        <OffertCard
             type={4}
-            target={3}
-            text="Eliminacja brudnej rdzawej ciepłej wody użytkowej"
+            target={4}
+            text="Oszczędzanie wody"
           />
         </div>
 
         <Parallax
           bgImage={Water6}
-          strength={-600}
+          strength={-400}
           renderLayer={(precentage) => (
             <div
               style={{
@@ -72,7 +72,7 @@ function Offerts(){
             </div>
             <div className="offert-name">Rozwiązywanie problemów z wodą</div>
             <div className="offert-desc">
-              Nie ma takiego problemu z wodą któremu nie stawimy czoła !!!
+              Nie ma takiego problemu z wodą któremu nie stawimy czoła.
               <br />
               Jeżeli masz jakikolwiek problem z wodą lub technologią z nią
               związaną zadzwoń. Na podstawie wieloletniego doświadczenia
@@ -112,11 +112,27 @@ function Offerts(){
           <div id="offert_3" className="ds-flex-wr-js-sb offert-row">
             <div className="offert-icon">
               <FontAwesomeIcon icon={faWater} size="3x" />
-              <FontAwesomeIcon icon={faBroom} size="3x" />
+              {/* <FontAwesomeIcon icon={faBroom} size="3x" /> */}
             </div>
             <div className="offert-name">
-              Innowacyjne metody usuwania osadów z instalacji eliminacja brudnej
-              rdzawej ciepłej wody użytkowej
+              Innowacyjne rozwiązania usuwania osadów <br/>z instalacji
+            </div>
+            <div className="offert-desc">
+              Jeżeli jesteś zainteresowany jak w stosunkowo nie długim czasie
+              usunąć osady z instalacji, zabezpieczyć je przed korozją oraz
+              zatrzymać proces zarastania rur niskim kosztem i całkowicie
+              bezobsługowo na długie lata, skontaktuj się z nami a nasi
+              specjaliści dokładnie omówią rozwiązanie i przedstawią ofertę
+              cenową indywidualnie dopasowaną do Państwa instalacji.
+            </div>
+          </div>
+          <div id="offert_4" className="ds-flex-wr-js-sb offert-row">
+            <div className="offert-icon">
+              <FontAwesomeIcon icon={faWater} size="3x" />
+              {/* <FontAwesomeIcon icon={faBroom} size="3x" /> */}
+            </div>
+            <div className="offert-name">
+              Oszczędzanie wody <br/>
             </div>
             <div className="offert-desc">
               Jeżeli jesteś zainteresowany jak w stosunkowo nie długim czasie

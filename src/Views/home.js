@@ -20,7 +20,7 @@ const image1 =
 const home =() =>{
     return (
       <div className="page-container">
-        <Parallax bgImage={Water1} strength={500}>
+        {/* <Parallax bgImage={Water1} strength={500}>
           <div  className='parallax-container'>
           <div className="text-back-shadow left-top-text">
           Wielkie oczekiwania są kluczem do wszystkiego
@@ -30,7 +30,7 @@ const home =() =>{
               skuteczność w doświadczeniu
             </div>
           </div>
-        </Parallax>
+        </Parallax> */}
         <div className="carousel-container box-shadow2">
           <InfoCarousel />
         </div>

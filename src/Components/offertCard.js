@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBroom,faTools,faTint,faKiwiBird,faWater,faPumpSoap } from '@fortawesome/free-solid-svg-icons';
+import { faBroom,faTools,faTint,faFaucet,faWater,faPumpSoap } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-scroll';
 const OffertCard = (props) => {
     const test =function(){
@@ -22,7 +22,7 @@ const OffertCard = (props) => {
             return <FontAwesomeIcon icon={faWater} size="5x" />;
             break;
           case 4:
-            return <FontAwesomeIcon icon={faBroom} size="5x" />;
+            return <FontAwesomeIcon icon={faFaucet} size="5x" />;
             break;
         }
     }

@@ -67,10 +67,7 @@ function Contact(){
           <div className="form-sides">
             <h2>Informacje</h2>
             <p>
-              Skontaktuj się znami aby złożyć zamowienie, uzyskać szczegółowe
-              informacje o naszych usłygach którymi jesteś zainteresowany. Nasz
-              zespół przekaże ci wszystkie informajce jakie będziesz
-              potrzebował.
+            Skontaktuj się z nami aby uzyskać szczegółowe informacje o naszych usługach, którymi jesteś zainteresowany. Nasz zespół przekaże Ci wszystkie potrzebne informacje.
             </p>
             <p> <FontAwesomeIcon icon={faPaperPlane} size="1x" /> <span>ul. Testowa 1X,31-30X Kraków</span></p>
             <p> <FontAwesomeIcon icon={faPhone} size="1x" /><span>+48-XXX-XXX-XXX</span></p>
@@ -114,7 +111,6 @@ function Contact(){
                     type="tel"
                     id="phone"
                     name="phone"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     // onChange={textUpdating}
                     placeholder="nr telefonu"
                     className="form-inputs"

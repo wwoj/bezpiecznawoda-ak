@@ -8,6 +8,7 @@ import Carousel_8 from "../Pictures/water-pic8.jpg";
 import Carousel_9 from "../Pictures/water-pic9.jpg";
 
 
+import { NavLink } from "react-router-dom";
 
 
 import Carousel_2 from "../Pictures/water-pic4.jpg";
@@ -36,12 +37,11 @@ export default class InfoCarousel extends Component
                 />
               </div>
               <Carousel.Caption>
-                <div className="text-dec-back-slider">
-                  <h3>Uzdatnianie wody</h3>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
-                </div>
+                <NavLink end to="/offerts">
+                  <div className="text-dec-back-slider">
+                    <h3>Uzdatnianie wody</h3>
+                  </div>
+                </NavLink>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -54,12 +54,11 @@ export default class InfoCarousel extends Component
               </div>
 
               <Carousel.Caption>
+              <NavLink end to="/offerts">
                 <div className="text-dec-back-slider">
                   <h3>Dezynfekcja wody</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
                 </div>
+                </NavLink>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -72,13 +71,11 @@ export default class InfoCarousel extends Component
               </div>
 
               <Carousel.Caption>
+              <NavLink end to="/offerts">
                 <div className="text-dec-back-slider">
                   <h3> Rozwiązywanie problemów z wodą</h3>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
                 </div>
+                </NavLink>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -91,16 +88,11 @@ export default class InfoCarousel extends Component
               </div>
 
               <Carousel.Caption>
+              <NavLink end to="/offerts">
                 <div className="text-dec-back-slider">
-                  <h3>
-                    Innowacyjne metody usuwania osadów z instalacji eliminacja
-                    brudnej rdzawej ciepłej wody użytkowej
-                  </h3>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
+                  <h3>Innowacyjne rozwiązania</h3>
                 </div>
+                </NavLink>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
