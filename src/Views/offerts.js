@@ -1,7 +1,7 @@
 import React ,{useState,useEffect }from "react";
 import OffertCard from "../Components/offertCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTools,faWater,faTint,faPumpSoap,faBroom } from '@fortawesome/free-solid-svg-icons';
+import { faTools,faWater,faTint,faPumpSoap,faFaucet } from '@fortawesome/free-solid-svg-icons';
 import { Parallax } from 'react-parallax';
 import Water6 from "../Pictures/water-pic6.jpg";
 
@@ -23,19 +23,15 @@ function Offerts(){
     return (
       <div className="page-container">
         <div className="ds-flex-wramp ds-flex-wr-js-sb offerd-cards ">
-          <OffertCard type={0} target={0} text="Rozwiązywanie problemów z wodą" />
+          <OffertCard
+            type={0}
+            target={0}
+            text="Rozwiązywanie problemów z wodą"
+          />
           <OffertCard type={1} target={1} text="Uzdatnianie wody" />
           <OffertCard type={2} target={2} text="Dezynfekcja wody" />
-          <OffertCard
-            type={3}
-            target={3}
-            text="Innowacyjne rozwiązania"
-          />
-        <OffertCard
-            type={4}
-            target={4}
-            text="Oszczędzanie wody"
-          />
+          <OffertCard type={3} target={3} text="Innowacyjne rozwiązania" />
+          <OffertCard type={4} target={4} text="Oszczędzanie wody" />
         </div>
 
         <Parallax
@@ -72,12 +68,12 @@ function Offerts(){
             </div>
             <div className="offert-name">Rozwiązywanie problemów z wodą</div>
             <div className="offert-desc">
-              Nie ma takiego problemu z wodą któremu nie stawimy czoła.
+              Nie ma takiego problemu z wodą, którego nie rozwiążemy.
               <br />
               Jeżeli masz jakikolwiek problem z wodą lub technologią z nią
               związaną zadzwoń. Na podstawie wieloletniego doświadczenia
               jesteśmy w stanie znaleźć indywidualne rozwiązanie Twojego
-              problemu uszyte na miarę.
+              problemu.
             </div>
           </div>
 
@@ -87,11 +83,11 @@ function Offerts(){
             </div>
             <div className="offert-name">Uzdatnianie wody</div>
             <div className="offert-desc">
-              Nasza firma służy w zakresie uzdatniania wody zimnej , ciepłej
-              oraz technologicznej. Wykorzystujemy głównie systemy oparte o
-              wymianę jonowymienną lub złoża filtracyjne ale także systemy
-              odwróconej osmozy dzięki czemu przygotowujemy wodę o odpowiednich
-              parametrach wymaganych przez klienta lub stosowane technologie.
+              Nasza firma zajmuje się uzdatnianiem wody zimnej, ciepłej oraz
+              technologicznej. Wykorzystujemy głównie systemy oparte o wymianę
+              jonowymienną lub złoża filtracyjne, ale także systemy odwróconej
+              osmozy dzięki czemu przygotowujemy wodę o odpowiednich parametrach
+              – stosownie do wymagań klienta.
             </div>
           </div>
           <div id="offert_2" className="ds-flex-wr-js-sb offert-row">
@@ -100,22 +96,20 @@ function Offerts(){
             </div>
             <div className="offert-name">Dezynfekcja wody</div>
             <div className="offert-desc">
-              Drodzy klienci posiadamy skuteczne rozwiązanie do dezynfekcji wody
-              dzięki któremu zwalczamy bakterie typu legionella, escherichia
-              coli, ropy błękitnej czy nawet zgorzeli gazowej występujących w
-              instalacjach wodnych.
-              <br />
-              Rozwiązania dopasowujemy do portfela klienta poprzez
-              dywersyfikację dostępnych technologii .
+              Posiadamy skut czne rozwiązania do dezynfekcji wody, dzięki którym
+              zwalczamy bakterie typu legionella, escherichia coli, ropy
+              błękitnej czy nawet zgorzeli gazowej występujące w instalacjach
+              wodnych. Rozwiązania dopasowujemy do portfela klienta poprzez
+              dywersyfikację dostępnych technologii.
             </div>
           </div>
           <div id="offert_3" className="ds-flex-wr-js-sb offert-row">
             <div className="offert-icon">
-              <FontAwesomeIcon icon={faWater} size="3x" />
+              <FontAwesomeIcon icon={faWater} size="5x" />
               {/* <FontAwesomeIcon icon={faBroom} size="3x" /> */}
             </div>
             <div className="offert-name">
-              Innowacyjne rozwiązania usuwania osadów <br/>z instalacji
+              Innowacyjne rozwiązania usuwania osadów z instalacji
             </div>
             <div className="offert-desc">
               Jeżeli jesteś zainteresowany jak w stosunkowo nie długim czasie
@@ -128,20 +122,13 @@ function Offerts(){
           </div>
           <div id="offert_4" className="ds-flex-wr-js-sb offert-row">
             <div className="offert-icon">
-              <FontAwesomeIcon icon={faWater} size="3x" />
+              <FontAwesomeIcon icon={faFaucet} size="5x" />
               {/* <FontAwesomeIcon icon={faBroom} size="3x" /> */}
             </div>
             <div className="offert-name">
-              Oszczędzanie wody <br/>
+              Oszczędzanie wody <br />
             </div>
-            <div className="offert-desc">
-              Jeżeli jesteś zainteresowany jak w stosunkowo nie długim czasie
-              usunąć osady z instalacji, zabezpieczyć je przed korozją oraz
-              zatrzymać proces zarastania rur niskim kosztem i całkowicie
-              bezobsługowo na długie lata, skontaktuj się z nami a nasi
-              specjaliści dokładnie omówią rozwiązanie i przedstawią ofertę
-              cenową indywidualnie dopasowaną do Państwa instalacji.
-            </div>
+            <div className="offert-desc">Text to add</div>
           </div>
         </div>
       </div>
