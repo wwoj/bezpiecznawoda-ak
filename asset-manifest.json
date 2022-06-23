@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/bezpiecznawoda-ak/static/css/main.ca1accc9.css",
-    "main.js": "/bezpiecznawoda-ak/static/js/main.f7ca2cbb.js",
+    "main.css": "/bezpiecznawoda-ak/static/css/main.05cedcd6.css",
+    "main.js": "/bezpiecznawoda-ak/static/js/main.31d0dc0e.js",
     "static/js/787.073a0837.chunk.js": "/bezpiecznawoda-ak/static/js/787.073a0837.chunk.js",
     "static/media/water-pic9.jpg": "/bezpiecznawoda-ak/static/media/water-pic9.80d37f5369edb91ad7d6.jpg",
-    "static/media/water-pic5.jpg": "/bezpiecznawoda-ak/static/media/water-pic5.f4f5fe4fed324cbaf7e3.jpg",
     "static/media/water-pic8.jpg": "/bezpiecznawoda-ak/static/media/water-pic8.10b80711459641d63094.jpg",
     "static/media/water-pic1.jpg": "/bezpiecznawoda-ak/static/media/water-pic1.8e077b5a3e9740d28bd9.jpg",
     "static/media/water-pic6.jpg": "/bezpiecznawoda-ak/static/media/water-pic6.2bb23cc69b59f10abc3f.jpg",
-    "static/media/water-pic4.jpg": "/bezpiecznawoda-ak/static/media/water-pic4.f3ba244499aa6545124f.jpg",
     "static/media/water-pic14.jpg": "/bezpiecznawoda-ak/static/media/water-pic14.2754bf0d2148eb5a989c.jpg",
-    "static/media/water-pic7.jpg": "/bezpiecznawoda-ak/static/media/water-pic7.9b6232a196dc49f6c021.jpg",
-    "static/media/BW_Logo_1.png": "/bezpiecznawoda-ak/static/media/BW_Logo_1.4ed6f72d0d95665776b7.png",
+    "static/media/Logo_5.png": "/bezpiecznawoda-ak/static/media/Logo_5.74ee3bc5618aafe99806.png",
+    "static/media/Logo_4.png": "/bezpiecznawoda-ak/static/media/Logo_4.5d26e6d9263e8309fbd6.png",
     "index.html": "/bezpiecznawoda-ak/index.html",
-    "main.ca1accc9.css.map": "/bezpiecznawoda-ak/static/css/main.ca1accc9.css.map",
-    "main.f7ca2cbb.js.map": "/bezpiecznawoda-ak/static/js/main.f7ca2cbb.js.map",
+    "main.05cedcd6.css.map": "/bezpiecznawoda-ak/static/css/main.05cedcd6.css.map",
+    "main.31d0dc0e.js.map": "/bezpiecznawoda-ak/static/js/main.31d0dc0e.js.map",
     "787.073a0837.chunk.js.map": "/bezpiecznawoda-ak/static/js/787.073a0837.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca1accc9.css",
-    "static/js/main.f7ca2cbb.js"
+    "static/css/main.05cedcd6.css",
+    "static/js/main.31d0dc0e.js"
   ]
 }
