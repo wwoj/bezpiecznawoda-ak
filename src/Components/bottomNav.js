@@ -1,6 +1,5 @@
 import React from "react";
 import NavObject from './bottomNavItem';
-import BottomNavObject from "./BottomNavObject";
 const navBottom = () => {
   return (
    <div className="bottom-nav-container  ds-flex-wr-js-sb">
