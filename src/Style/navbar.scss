@@ -1,0 +1,80 @@
+@import './variables.scss';
+.nav-container{
+    padding:  0.5rem 1rem;
+    background-color: $primeBackgroundColor;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    li{
+        color: white;
+      padding: 0 1em;
+   
+        @extend .ds-flex-center-center;
+        a{
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: #dbd5d5;
+          text-decoration: none;
+          &:hover{
+              cursor: pointer;
+              color: $colorTextHover;
+          }
+        }
+      
+    }
+}
+.small-navbar
+{
+    color:white;
+    background-color: $primaryColor1  ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    overflow: hidden;
+    transition: 800ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease;
+
+}
+.small-navbar-ul{
+    padding: 0;
+    li{
+        padding:  2rem 0  2rem 0;
+    }
+}
+.small-navbar-ul li:nth-of-type(even){
+    background: $navbarOddColor ;
+   
+}
+.small-navbar-ul li:nth-of-type(odd){
+    background: $primaryColor1  
+}
+.logo-container{
+    width: 75px;
+}
+.offert-icon, .offert-name{
+    width: 20%;
+    padding: 10px;
+    }
+.offert-name{
+        width: 20%;
+        padding: 10px;
+        text-align: center ;
+}
+.bottom-nav-container a {
+    color:#76b8d1;;
+    text-decoration: none;
+}
+.list-style{
+    list-style-type: none;
+    margin: 0;
+  }
+// button navigation
+
+.nav-bottom-item-text{
+    font-size: 2rem;
+    font-weight: 500;;
+}

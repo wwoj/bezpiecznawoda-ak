@@ -27,18 +27,18 @@ function NavbarBig(){
             Oferta
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink activeclassname="test" className="" end to="/history">
             Realizacje
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink activeclassname="test" className="" end to="/contact">
             Kontakt
           </NavLink>
         </li>
         <li>
-          <a href="tel:+48534073727">
+          <a href="tel:+485742331257">
             <FontAwesomeIcon icon={faPhone} size="2x" />
           </a>
         </li>

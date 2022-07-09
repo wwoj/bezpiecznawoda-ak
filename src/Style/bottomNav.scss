@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+.bottom-nav-container{
+
+    background-color: white;
+    // margin-bottom: 2rem;
+}
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+  }
+.nav-bottom-item{
+  box-sizing:content-box;
+    position: relative;
+    width: 23vw;
+    max-width: 250px;
+    min-width: 75px;
+    min-height: 75px;
+    max-height: 250px;
+    height: 23vw;
+    margin: 0.5rem;
+    background: linear-gradient(var(--myColor1), var(--myColor2));
+  transition: --myColor1 0.5s, --myColor2 0.5s;
+    a{
+        width: 100%;
+        height: 100%;
+    }
+    &:hover
+    {
+        cursor: pointer;
+        --myColor1: rgba(48,188,215,1);
+        --myColor2: rgba(0,141,210,1);
+        color:white !important;
+        a{
+            color: white;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+  .nav-bottom-item{
+    .nav-bottom-item-text{
+    font-size: 1rem;
+    }
+  }
+}
+ 

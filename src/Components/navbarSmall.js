@@ -20,7 +20,7 @@ function NavbarSmall(){
         <li>
           <NavLink activeclassname="test" className="" end to="/">
             <img
-              style={{ width: "220px" }}
+              style={{ width: "60px" }}
               src={AKLogo}
               alt="Bezpieczna woda Logo"
             />
@@ -50,18 +50,18 @@ function NavbarSmall(){
                 Oferta
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink activeclassname="test" className="" end to="/history" onClick={switchMenuVisibility}>
                 Realizacje
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink activeclassname="test" className="" end to="/contact" onClick={switchMenuVisibility}>
                 Kontakt
               </NavLink>
             </li>
             <li>
-              <a href="tel:+48534073727">
+              <a href="tel:+48574231257">
                 <FontAwesomeIcon icon={faPhone} size="2x" />
               </a>
             </li>

@@ -1,57 +1,13 @@
-import React ,{useState,useEffect }from "react";
+import React from "react";
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane,faLocationDot,faPhone,faEnvelope,faClock} from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane,faPhone,faEnvelope,faIdBadge} from '@fortawesome/free-solid-svg-icons';
 
 
-function Contact(){
-    const [count, setCount] = useState(0);
-    const [emailAddress, setEmail] = useState("");
-    const [textMessage, setMessage] = useState("");
-    const [customerName, SetCustomer] = useState("");
-    const [contactObject,SetContactObject] = useState({
-      'email':"wojcik.wojtek@yahoo.pl",
-      'customerMessage':'Hello World!!!',
-      'customerName':"Wojciech Wójcik"
-    })
-
-
-
-    const [age, setAge] = useState(42);
-    const [fruit, setFruit] = useState('banana');
-    const [todos, setTodos] = useState([{ text: "Learn Hooks" }]);
-    function testMe(){
-        setCount(count + 1);
-        console.log("TestMe",count)
-    }
-
-    useEffect(() => {
-        // Zaktualizuj tytuł dokumentu, korzystając z interfejsu API przeglądarki
-        // document.title = `Naciśnięto ${count} razy`;
-      });
-    const textUpdating = (event)=>{
-      let objectId = event.target.id;
-      let objectValue=event.target.value;
-      switch(objectId)
-      {
-        case "customerEmail":
-          setEmail(objectValue);
-          break;
-        case "messageArea":
-          setMessage(objectValue);
-          break;
-        case "customerName":
-          SetCustomer(objectValue);
-          break;
-      }
-  setEmail(event.target.value);
-    }
-   
+function Contact(){   
     
     const sendEmail = (e) => {
       e.preventDefault();
-      console.log("Send email")
-      console.log("Object:",e.target)
 
       emailjs.sendForm('service_xu3exsx', 'template_1mdz2w7', e.target, 'user_tkAMXhYpiBWbtyiXwqcFB')
         .then((result) => {
@@ -67,12 +23,14 @@ function Contact(){
           <div className="form-sides">
             <h2>Informacje</h2>
             <p>
-            Skontaktuj się z nami aby uzyskać szczegółowe informacje o naszych usługach, którymi jesteś zainteresowany. Nasz zespół przekaże Ci wszystkie potrzebne informacje.
+            Skontaktuj się z&nbsp;nami aby uzyskać szczegółowe informacje o&nbsp;naszych usługach, którymi jesteś zainteresowany. Nasz zespół przekaże Ci wszystkie potrzebne informacje.
             </p>
-            <p> <FontAwesomeIcon icon={faPaperPlane} size="1x" /> <span>ul. Testowa 1X,31-30X Kraków</span></p>
-            <p> <FontAwesomeIcon icon={faPhone} size="1x" /><span>+48-XXX-XXX-XXX</span></p>
-            <p><FontAwesomeIcon icon={faEnvelope} size="1x" /><span>xxxx.xxx@xxx.xxx</span></p>
-            <p> <FontAwesomeIcon icon={faClock} size="1x" /><span>Pon-Pt 8.00 - 18.00</span></p>
+            {/* <p> <FontAwesomeIcon icon={faPaperPlane} size="1x" /> <span>ul. Testowa 1X,31-30X Kraków</span></p> */}
+            <p> <FontAwesomeIcon icon={faPhone} size="1x" /><span>+48-574-231-257</span></p>
+            <p><FontAwesomeIcon icon={faEnvelope} size="1x" /><span>biuro@bezpiecznawoda.com</span></p>
+            <p><FontAwesomeIcon icon={faIdBadge} size="1x" /><span>NIP: </span><span>9452063386</span></p>
+
+            {/* <p> <FontAwesomeIcon icon={faClock} size="1x" /><span>Pon-Pt 8.00 - 18.00</span></p> */}
           </div>
           <div className="form-sides">
             <h2>Formularz kontaktowy</h2>
@@ -127,7 +85,7 @@ function Contact(){
                     required
                     style={{ resize: "none" }}
                     className="form-inputs"
-                    onChange={textUpdating}
+                    // onChange={textUpdating}
                   ></textarea>
                 </div>
 

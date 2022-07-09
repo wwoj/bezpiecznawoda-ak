@@ -1,0 +1,51 @@
+.carousel{
+    padding: 1rem 0rem 1rem 0rem;
+}
+.carousel-item-object{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.carousel-item-picture{
+    width: 80%;
+    min-height: 100%;
+}
+.carousel-item{
+    background-color: rgba(33, 77, 100, 1);
+}
+.carousel-container
+{
+    margin: 2rem 0px 2rem 0px;
+}
+.text-dec-back-slider{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+
+    background-color: $colorBackTextRGBA2;
+}
+.carousel-caption a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-item-picture {
+        min-height: 50%;
+        width: 100%;}
+        
+    .carousel-item-object {
+       height: auto;
+       width: 100%;}
+          
+    .carousel-inner {
+        width: 100%;}
+          
+    .carousel {
+        padding:0;
+        }    
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import AKLogo from "../Pictures/Logo_1.png";
+import AKLogo from "../Pictures/Logo_4.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookSquare,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 const footer =()=>{
     return (
       <div className="footer-container box-shadow2 ds-flex-wr-js-sb">
@@ -11,19 +11,19 @@ const footer =()=>{
           </div>
         </div>
         <div className="footer-column-container ds-flex-start-start-column">
-          <h2 className="footer-column-title">Śledz nas</h2>
+          <h2 className="footer-column-title">Śledź nas</h2>
           <div className="list-of-social ds-flex-center-center">
             
-            <a href="https://www.facebook.com/" target="_blank" className="box-shadow1">
-              <FontAwesomeIcon icon={faFacebookSquare} size="2x" />
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="ds-flex-center-center">
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
           </div>
         </div>
         <div className="footer-column-container ds-flex-start-start-column">
           <h2 className="footer-column-title">Kontakt</h2>
-          <h5 className="footer-column-title">bezpiecznaWoda-ak</h5>
-          <p className="footer-column-title">ul. xxxxxxxxx XX</p>
-          <p className="footer-column-title">XX-XXX Kraków</p>
+          <p className="footer-column-title">Artur Konopka</p>
+          <p className="footer-column-title">biuro@bezpiecznawoda.com</p>
+          <p className="footer-column-title">+48-574-231-257</p>
         </div>
       </div>
     );

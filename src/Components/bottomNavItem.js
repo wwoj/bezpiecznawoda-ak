@@ -1,28 +1,29 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import { NavLink } from "react-router-dom";
-import AKLogo from "../Pictures/Logo_1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard,faInfo,faTint,faHistory } from '@fortawesome/free-solid-svg-icons'
-const navBottom = (props) => {
-    const test =function(){
-        console.log("test me asd here")
-
+function NavButton(props) {
+    const [width,setWidth]=useState(window.innerWidth)
+     useEffect(() => {
+        function handleResize() {
+          setWidth(window.innerWidth)
     }
+        window.addEventListener('resize', handleResize)
+      })
+      const widthChange = 800;
     const test1 =function(type){
         switch(type)
         {
             case 0:
-                return <FontAwesomeIcon icon={faInfo} size="5x" />
-                break;
+                return <FontAwesomeIcon icon={faInfo}   className={width>widthChange? "fa-5x": "fa-2x"}/>
             case 1:
-                return <FontAwesomeIcon icon={faTint} size="5x"/>
-                break;
+                return <FontAwesomeIcon icon={faTint}  className={width>widthChange? "fa-5x": "fa-2x"}/>
             case 2:
-                return <FontAwesomeIcon icon={faHistory} size="5x"/>
-                break;
+                return <FontAwesomeIcon icon={faHistory} className={width>widthChange? "fa-5x": "fa-2x"}/>
             case 3:
-                return <FontAwesomeIcon icon={faAddressCard} size="5x"/>
-                break;
+                return <FontAwesomeIcon icon={faAddressCard} className={width>widthChange? "fa-5x": "fa-2x"}/>
+            default:
+                    break;
         }
     }
     test1(props.type);
@@ -33,8 +34,10 @@ const navBottom = (props) => {
        <NavLink
             end
             to={props.linkTo}
+            className="ds-flex-center-column"
           >          
             <div className="nav-bottom-item-icon"> 
+            
             {test1(props.type)} 
             </div>
             <div className="nav-bottom-item-text">{props.text} </div>
@@ -44,4 +47,4 @@ const navBottom = (props) => {
 </div>
   );
 };
-export default navBottom;
+export default NavButton;

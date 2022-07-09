@@ -1,0 +1,23 @@
+.App{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.page-container{
+    flex: 1 1;
+    width: 85%;
+    margin: auto;
+    // min-height: 62vh;
+    padding-bottom: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+.page-container {
+       width: 100%;
+    }
+}
