@@ -1,8 +1,9 @@
 {
-  "homepage": "https://wwoj.github.io/bezpiecznawoda-ak/",
   "name": "bezpiecznawoda-ak",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://usuwanielegionelli.pl/",
+  
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
