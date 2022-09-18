@@ -1,62 +1,50 @@
-@import './variables';
-@import './main.scss';
-@import './navbar.scss';
-@import './footer.scss';
-@import './common.scss';
-@import './bottomNav.scss';
-@import './contact.scss';
+@import "./variables";
+@import "./main.scss";
+@import "./navbar.scss";
+@import "./footer.scss";
+@import "./common.scss";
+@import "./bottomNav.scss";
+@import "./contact.scss";
 @import "./carousel.scss";
 @import "./info.scss";
 @import "./offert.scss";
+@import "./modalMail.scss";
 
-
-
-
-
- 
-  @media only screen and (max-width: 600px) {
-    .offert-row{
-        flex-direction: column;
-        div{
-            width: 90%;
-            margin-right: 5%;
-            margin-left: 5%;
-
-        }
-        div:not(:first-child){
-            border-top:1px solid black ;
-        }
+@media only screen and (max-width: 600px) {
+  .offert-row {
+    flex-direction: column;
+    div {
+      width: 90%;
+      margin-right: 5%;
+      margin-left: 5%;
     }
+    div:not(:first-child) {
+      border-top: 1px solid black;
+    }
+  }
 }
-  
 
 @media only screen and (max-width: 900px) {
-    .list-style
-    {
-        a
-        {
-            font-size: 0.9rem !important;
-        }
+  .list-style {
+    a {
+      font-size: 0.9rem !important;
     }
-   
+  }
 }
 @media only screen and (max-width: 760px) {
-    body{
-        // background-color: $primaryColor !important;
-        // padding-bottom: 360px;
-    }
-    .logo-container{
-        width: 200px;
-    }
-    .active{
-    
-        color:white !important;
-      font-weight: 800 !important;
-    }
-    .form-sides
-    {
-        width: 100%  ;
-        padding: 0.5rem;
-    }
+  body {
+    // background-color: $primaryColor !important;
+    // padding-bottom: 360px;
+  }
+  .logo-container {
+    width: 200px;
+  }
+  .active {
+    color: white !important;
+    font-weight: 800 !important;
+  }
+  .form-sides {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }
- 

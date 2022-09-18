@@ -1,31 +1,32 @@
-@import './variables.scss';
-.footer-container{
-    background-color: $primeBackgroundColor;
-    color: white;
-    img{width: 75px;}
-    margin-bottom: 0.2rem;
-
+@import "./variables.scss";
+.footer-container {
+  //   margin-bottom: 0;
+  background-color: $primeBackgroundColor;
+  color: white;
+  img {
+    width: 75px;
+  }
+  //   margin-bottom: 0.2rem;
 }
 .footer-column-container {
- 
-    padding: 1rem;
-    p{
-        margin: 0;
-    }
+  padding: 1rem;
+  p {
+    margin: 0;
+  }
 }
-.list-of-social{
-    width: 100%;
-    a{
-        // padding: 8px;
-        // color:$primaryColor;
-        transition: 0.5s;
-        background-color: white;
-        border-radius:50% ;
-        &:hover{
-            cursor: pointer;
-        }
-        svg{
-            padding: 0;
-        }
+.list-of-social {
+  width: 100%;
+  a {
+    // padding: 8px;
+    // color:$primaryColor;
+    transition: 0.5s;
+    background-color: white;
+    border-radius: 50%;
+    &:hover {
+      cursor: pointer;
     }
-} 
+    svg {
+      padding: 0;
+    }
+  }
+}

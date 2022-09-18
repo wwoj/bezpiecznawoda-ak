@@ -2,7 +2,7 @@
   "name": "bezpiecznawoda-ak",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://usuwanielegionelli.pl/",
+  "homepage": "https://bezpiecznawoda.com/",
   
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
